@@ -3,11 +3,11 @@ using namespace std;
 
 void hanoi(int n, char from, char to, char aux) {
     if (n == 1) {
-        cout << "Move ring " << 1 << " from " << from << " aux " << aux << endl;
+        cout << "Move disk " << 1 << " from " << from << " aux " << aux << endl;
         return;
     }
     hanoi(n - 1, from, aux, to);              
-    cout << "Move ring " << n << " from " << from << " aux " << aux << endl; 
+    cout << "Move disk " << n << " from " << from << " aux " << aux << endl; 
     hanoi(n - 1, to, from, aux);              
 
 int main() {
